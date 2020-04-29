@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="cardCoupon"
+            type="com.hank.credit.mycards.CardCoupon" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/detail_card_image"
+            android:layout_width="255dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="32dp"
+            app:imageResource="@{cardCoupon.cardImg}"
+            app:layout_constraintEnd_toEndOf="@+id/detail_card_name"
+            app:layout_constraintStart_toStartOf="@+id/detail_card_name"
+            app:layout_constraintTop_toBottomOf="@+id/detail_card_name"
+            tools:srcCompat="@drawable/img_card_double" />
+
+        <TextView
+            android:id="@+id/detail_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="100dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black"
+            android:text="@{cardCoupon.cardDescription}"
+            app:layout_constraintEnd_toEndOf="@+id/detail_card_image"
+            app:layout_constraintStart_toStartOf="@+id/detail_card_image"
+            app:layout_constraintTop_toBottomOf="@+id/detail_card_image"
+            tools:text="優惠內容" />
+
+        <TextView
+            android:id="@+id/detail_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/text_card_blue"
+            android:text="@{cardCoupon.cardName}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="玉山雙幣卡" />
+
+        <Button
+            android:id="@+id/detali_addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/btn_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_description" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

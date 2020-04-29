@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Credit</string>
+    <string name="title_search">Search</string>
+    <string name="title_mycards">My cards</string>
+    <string name="title_other">Other</string>
+    <string name="cardname_yushan_double">玉山雙幣卡</string>
+    <string name="btn_add">加入我的卡片</string>
+</resources>
