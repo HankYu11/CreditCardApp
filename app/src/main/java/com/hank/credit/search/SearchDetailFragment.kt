@@ -51,7 +51,7 @@ class SearchDetailFragment : Fragment(){
 
         return binding.root
     }
-    
+
     private fun setCardCoupon(cardDao: CardDao,cardName: String,binding : FragmentSearchDetailBinding){
         uiScope.launch {
             cardCoupon = getCardCoupon(cardDao,cardName)
