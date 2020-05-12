@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/crdit_navigation"
-    app:startDestination="@id/searchFragment">
+    app:startDestination="@id/mycardsFragment">
 
     <fragment
         android:id="@+id/searchFragment"
@@ -19,14 +19,17 @@
         android:label="MycardsFragment" />
     <fragment
         android:id="@+id/otherFragment"
-        android:name="com.hank.credit.OtherFragment"
+        android:name="com.hank.credit.other.OtherFragment"
         android:label="OtherFragment" />
     <fragment
         android:id="@+id/searchDetailFragment"
-        android:name="com.hank.credit.search.SearchDetailFragment"
+        android:name="com.hank.credit.search.detail.SearchDetailFragment"
         android:label="SearchDetailFragment" >
         <argument
             android:name="cardName"
             app:argType="string" />
+        <action
+            android:id="@+id/action_searchDetailFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
     </fragment>
 </navigation>

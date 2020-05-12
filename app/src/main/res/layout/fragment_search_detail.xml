@@ -22,17 +22,16 @@
             app:layout_constraintEnd_toEndOf="@+id/detail_card_name"
             app:layout_constraintStart_toStartOf="@+id/detail_card_name"
             app:layout_constraintTop_toBottomOf="@+id/detail_card_name"
-            tools:srcCompat="@drawable/img_card_double" />
+            tools:srcCompat="@drawable/img_guotai" />
 
         <TextView
             android:id="@+id/detail_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="100dp"
+            android:layout_marginTop="32dp"
+            android:text="@{cardCoupon.cardDescription}"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@android:color/black"
-            android:text="@{cardCoupon.cardDescription}"
             app:layout_constraintEnd_toEndOf="@+id/detail_card_image"
             app:layout_constraintStart_toStartOf="@+id/detail_card_image"
             app:layout_constraintTop_toBottomOf="@+id/detail_card_image"
@@ -51,14 +50,5 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="玉山雙幣卡" />
 
-        <Button
-            android:id="@+id/detali_addButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="@string/btn_add"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/detail_description" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

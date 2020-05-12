@@ -40,11 +40,11 @@ class SearchAdapter(val clickListener: SearchListener) : ListAdapter<Card,Search
 
 class CardDiffCallback : DiffUtil.ItemCallback<Card>() {
     override fun areItemsTheSame(oldItem: Card, newItem: Card): Boolean {
-        return oldItem.cardName == newItem.cardName
+        return oldItem === newItem
     }
 
     override fun areContentsTheSame(oldItem: Card, newItem: Card): Boolean {
-        return  oldItem == newItem
+        return  oldItem.cardName == newItem.cardName
     }
 }
 

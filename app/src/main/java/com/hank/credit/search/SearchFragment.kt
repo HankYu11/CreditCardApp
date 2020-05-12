@@ -43,7 +43,6 @@ class SearchFragment : Fragment(){
         //ViewModel
         val viewModelFactory = SearchViewModelFactory(cardDao)
         viewModel = ViewModelProvider(this,viewModelFactory).get(SearchViewModel::class.java)
-
         //Setting cardList
         val manager = GridLayoutManager(activity,2)
         binding.cardList.layoutManager = manager

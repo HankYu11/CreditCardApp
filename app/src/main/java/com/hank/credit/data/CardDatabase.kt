@@ -36,23 +36,23 @@ abstract class CardDatabase : RoomDatabase(){
                 .build()
 
         val PREPOPULATE_CARD = listOf(
-            Card("玉山雙幣卡", R.drawable.img_card_double),
-            Card("花旗現金回饋卡", R.drawable.img_card_huachi),
-            Card("國泰白金卡", R.drawable.img_card_guotaibaigin),
-            Card("測試", R.drawable.img_card_double),
-            Card("測試1", R.drawable.img_card_double),
-            Card("測試2", R.drawable.img_card_double),
-            Card("測試3", R.drawable.img_card_double),
-            Card("測試4", R.drawable.img_card_double)
+            Card("玉山雙幣卡", R.drawable.img_yushan),
+            Card("花旗現金回饋卡", R.drawable.img_hachi),
+            Card("國泰白金卡", R.drawable.img_guotai),
+            Card("匯豐享樂卡", R.drawable.img_huafong),
+            Card("測試1", R.drawable.img_yushan),
+            Card("測試2", R.drawable.img_yushan),
+            Card("測試3", R.drawable.img_yushan),
+            Card("測試4", R.drawable.img_yushan)
             )
         val PREPOPULATE_COUPON = listOf(
-            Coupon("海外","實體通路現金回饋2.5%","花旗現金回饋卡"),
-            Coupon("餐飲","國內餐飲業95折優惠","國泰白金卡"),
-            Coupon("加油","不限加油站，加油一律8折","國泰白金卡"),
-            Coupon("便利商店","7-11消費5%現金回饋","玉山雙幣卡"),
+            Coupon("海外","現金回饋2.5%","花旗現金回饋卡"),
+            Coupon("餐飲","餐飲業95折優惠","國泰白金卡"),
+            Coupon("加油","加油一律8折","國泰白金卡"),
+            Coupon("便利商店","5%現金回饋","玉山雙幣卡"),
             Coupon("機場","貴賓休息室","花旗現金回饋卡"),
-            Coupon("點心","特約點心商店5折","國泰白金卡"),
-            Coupon("海外","50%","國泰白金卡"),
+            Coupon("點心","特約商店5折","玉山雙幣卡"),
+            Coupon("海外","50%","匯豐享樂卡"),
             Coupon("餐飲","50%","花旗現金回饋卡")
         )
 
